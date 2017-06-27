@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ru.finance2.simplecrmandroid">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:name="ru.finance2.simplecrmandroid.Application"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="ru.finance2.simplecrmandroid.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="ru.finance2.simplecrmandroid.SyncDatabase"></activity>
+        <activity android:name="ru.finance2.simplecrmandroid.controllers.OneWaySyncEntityList"></activity>
+        <activity android:name="ru.finance2.simplecrmandroid.controllers.TwoWaysSyncEntityList"></activity>
+        <activity android:name="ru.finance2.simplecrmandroid.controllers.ActivityTestElements"></activity>
+        <activity android:name="ru.finance2.simplecrmandroid.controllers.EntityForm"></activity>
+        <activity android:name="ru.finance2.simplecrmandroid.controllers.EntityList"></activity>
+
+        <activity
+            android:name=".helpers.AndroidDatabaseManager"
+            android:theme="@style/Theme.AppCompat.Light" />
+    </application>
+
+</manifest>
